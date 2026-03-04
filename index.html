@@ -119,10 +119,10 @@
         <!-- BUSCADOR Y FILTRO -->
         <div class="container my-4">
             <div class="row g-3">
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <input type="text" id="inputBuscar" class="form-control" placeholder="Buscar película...">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <select id="selectGenero" class="form-select">
                         <option value="">Todos los géneros</option>
                         <option value="Acción">Acción</option>
@@ -132,6 +132,12 @@
                         <option value="Terror">Terror</option>
                         <option value="Aventura">Aventura</option>
                     </select>
+                </div>
+                <div class="col-md-2">
+                    <button id="btnLimpiarFiltros"
+                        class="btn btn-secondary w-100 h-100 d-flex align-items-center justify-content-center gap-2">
+                        <i class="bi bi-x-circle"></i> Limpiar
+                    </button>
                 </div>
             </div>
         </div>

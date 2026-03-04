@@ -158,6 +158,7 @@ const btnLogout = document.getElementById('btnLogout');
 const btnAgregar = document.getElementById('btnAgregar');
 const inputBuscar = document.getElementById('inputBuscar');
 const selectGenero = document.getElementById('selectGenero');
+const btnLimpiarFiltros = document.getElementById('btnLimpiarFiltros');
 const gridPeliculas = document.getElementById('gridPeliculas');
 const carouselMovies = document.getElementById('carouselMovies');
 const sinResultados = document.getElementById('sinResultados');
@@ -290,6 +291,16 @@ inputBuscar.addEventListener('input', () => {
 // ============================================
 
 selectGenero.addEventListener('change', () => {
+    renderizarPeliculas();
+});
+
+// ============================================
+// EVENTO: LIMPIAR FILTROS
+// ============================================
+
+btnLimpiarFiltros.addEventListener('click', () => {
+    inputBuscar.value = '';
+    selectGenero.value = '';
     renderizarPeliculas();
 });
 
